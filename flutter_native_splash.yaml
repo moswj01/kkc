@@ -1,0 +1,11 @@
+flutter_native_splash:
+
+  android: true
+  ios: true
+  web: false
+  color: #FA1010
+  background_image: "assets/send.png"
+  image: "assets/bike.png"
+  branding: "assets/branding.png"
+
+   
