@@ -9,16 +9,7 @@ class BrandsView extends GetView<BrandsController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('BrandsView'),
-        centerTitle: true,
-      ),
-      body: const Center(
-        child: Text(
-          'BrandsView is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+     
     );
   }
 }
