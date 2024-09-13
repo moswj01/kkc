@@ -8,7 +8,7 @@
 PRODUCT_NAME = send
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.example.send
+PRODUCT_BUNDLE_IDENTIFIER = com.sendcompany.send_delivery
 
 // The copyright displayed in application information
 PRODUCT_COPYRIGHT = Copyright © 2024 com.example. All rights reserved.
