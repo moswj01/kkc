@@ -17,8 +17,8 @@ class HomeView extends GetView<HomeController> {
             children: [
               Container(
                 width: size.width,
-                height: size.height / 4,
-                child: Image.asset("assets/banner.png"),
+                height: size.height / 4.6,
+                decoration: BoxDecoration(image: DecorationImage(image: AssetImage('assets/banner.png'),fit: BoxFit.fill)),
               ),
               Container(
                 margin: EdgeInsets.only(

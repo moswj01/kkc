@@ -28,7 +28,7 @@ class MainPageView extends GetView<MainPageController> {
           ],
         ),
         bottomNavigationBar: Container(
-          height: 70,
+          height: 100,
           decoration: BoxDecoration(
               borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(20), topRight: Radius.circular(20)),
