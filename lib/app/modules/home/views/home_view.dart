@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+import 'package:send/app/modules/brands/views/brands_view.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -47,6 +48,7 @@ class HomeView extends GetView<HomeController> {
           ),
           Container(
             child: InkWell(
+              onTap: () => Get.to(() =>BrandsView()),
               child: Image.asset('assets/sevice1.png'),
             ),
           ),

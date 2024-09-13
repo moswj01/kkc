@@ -36,6 +36,8 @@ dependencies:
   google_fonts: ^6.2.1
   flutter_native_splash: ^2.4.1
   icons_launcher: ^2.1.7
+  persistent_bottom_nav_bar: ^6.2.1
+  hugeicons: ^0.0.7
 
 
 
