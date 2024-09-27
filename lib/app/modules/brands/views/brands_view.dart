@@ -17,7 +17,7 @@ class BrandsView extends GetView<BrandsController> {
           child: Lottie.asset('assets/loading.json'),
          ),
          Center(
-          child: Text("Please check your google Maps API KEY"),
+          child: Text("Please check your permission access"),
          )
        ],
      )

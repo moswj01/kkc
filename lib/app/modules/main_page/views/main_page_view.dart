@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:hugeicons/hugeicons.dart';
-import 'package:send/app/modules/chat/views/chat_view.dart';
-import 'package:send/app/modules/home/views/home_view.dart';
-import 'package:send/app/modules/order_list/views/order_list_view.dart';
-import 'package:send/app/modules/profile/views/profile_view.dart';
-import 'package:send/app/modules/wallet/views/wallet_view.dart';
+import 'package:SENd/app/modules/chat/views/chat_view.dart';
+import 'package:SENd/app/modules/home/views/home_view.dart';
+import 'package:SENd/app/modules/order_list/views/order_list_view.dart';
+import 'package:SENd/app/modules/profile/views/profile_view.dart';
+import 'package:SENd/app/modules/wallet/views/wallet_view.dart';
 
 import '../controllers/main_page_controller.dart';
 

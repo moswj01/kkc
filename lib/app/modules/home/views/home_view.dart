@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:send/app/modules/brands/views/brands_view.dart';
+import 'package:SENd/app/modules/brands/views/brands_view.dart';
 
 import '../controllers/home_controller.dart';
 
