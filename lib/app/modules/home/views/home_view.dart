@@ -47,6 +47,11 @@ class HomeView extends GetView<HomeController> {
             ],
           ),
           Container(
+            margin: EdgeInsets.symmetric(horizontal: 20,vertical: 20,),
+            width: size.width,
+            child: Text("บริการ",textAlign: TextAlign.left,style: TextStyle(fontSize: 20,fontWeight: FontWeight.w900),),
+          ),
+          Container(
             child: InkWell(
               onTap: () => Get.to(() =>BrandsView()),
               child: Image.asset('assets/sevice1.png'),
@@ -174,7 +179,7 @@ class HomeView extends GetView<HomeController> {
             margin: EdgeInsets.only(top: 35, left: 20),
             child: Text(
               "โปรโมชัน",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               textAlign: TextAlign.left,
             ),
           ),
