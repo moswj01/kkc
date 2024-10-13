@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:lottie/lottie.dart';
 import '../controllers/brands_controller.dart';
 
 class BrandsView extends GetView<BrandsController> {
@@ -16,7 +17,8 @@ class BrandsView extends GetView<BrandsController> {
         Completer<GoogleMapController>();
 
     return Scaffold(
-        body: Stack(
+        body: Obx(() => brandController.isLoad.value == true
+        ? LottieBuilder.asset("assets/loading.json"): Stack(
       alignment: AlignmentDirectional.bottomCenter,
       children: [
         GoogleMap(
@@ -34,12 +36,7 @@ class BrandsView extends GetView<BrandsController> {
                     target: LatLng(brandController.currentPosition!.latitude,
                         brandController.currentPosition!.longitude))));
           },
-          markers: {
-            Marker(
-                markerId: MarkerId("myLocation"),
-                position: LatLng(brandController.currentPosition!.latitude,
-                    brandController.currentPosition!.longitude))
-          },
+        
         ),
         Container(
           padding: EdgeInsets.all(20),
@@ -113,6 +110,7 @@ class BrandsView extends GetView<BrandsController> {
           ),
         )
       ],
-    ));
+    )
+        ));
   }
 }

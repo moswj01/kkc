@@ -6,11 +6,13 @@ class BrandsController extends GetxController {
   //TODO: Implement BrandsController
 
   final count = 0.obs;
+  final isLoad = true.obs;
   LatLng? local;
   Position? currentPosition;
   @override
   void onInit() {
     _getUserLocation();
+   
     super.onInit();
   }
 
@@ -48,6 +50,8 @@ class BrandsController extends GetxController {
     currentPosition = await Geolocator.getCurrentPosition();
 
     local = LatLng(currentPosition!.latitude, currentPosition!.longitude);
-    update();
+   if (local != null) {
+     isLoad.value = false;
+   }
   }
 }
