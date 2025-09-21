@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "machines",
+  "info": {
+    "singularName": "machine",
+    "pluralName": "machines",
+    "displayName": "Machine"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "size": {
+      "type": "integer"
+    },
+    "type": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean",
+      "required": true,
+      "default": false
+    },
+    "store": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::store.store",
+      "inversedBy": "machines"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "qty": {
+      "type": "integer"
+    }
+  }
+}
