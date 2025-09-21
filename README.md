@@ -22,11 +22,13 @@ Strapi backend API for the SENd automatic laundry system.
 
 1. Clone the repository
 2. Install dependencies:
+
 ```bash
 npm install
 ```
 
 3. Configure environment variables:
+
 ```bash
 cp .env.example .env
 ```
@@ -34,6 +36,7 @@ cp .env.example .env
 4. Update the `.env` file with your database credentials and other settings.
 
 5. Create the database:
+
 ```sql
 CREATE DATABASE send_dbs;
 ```
@@ -65,25 +68,27 @@ Once the server is running, you can access the API documentation at:
 ## Database Schema
 
 ### Store (Buder)
+
 - Store information for automatic laundry shops
 - Location data, contact info, services offered
 - Operating hours and pricing
 
 ### Machine
+
 - Washing machine information
 - Status tracking (available, in-use, maintenance)
 - Usage statistics
 
 ## Environment Variables
 
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `DATABASE_CLIENT` | Database type | mysql |
-| `DATABASE_HOST` | Database host | localhost |
-| `DATABASE_PORT` | Database port | 3306 |
-| `DATABASE_NAME` | Database name | send_dbs |
-| `DATABASE_USERNAME` | Database user | root |
-| `DATABASE_PASSWORD` | Database password | |
+| Variable            | Description       | Default   |
+| ------------------- | ----------------- | --------- |
+| `DATABASE_CLIENT`   | Database type     | mysql     |
+| `DATABASE_HOST`     | Database host     | localhost |
+| `DATABASE_PORT`     | Database port     | 3306      |
+| `DATABASE_NAME`     | Database name     | send_dbs  |
+| `DATABASE_USERNAME` | Database user     | root      |
+| `DATABASE_PASSWORD` | Database password |           |
 
 ## License
 
