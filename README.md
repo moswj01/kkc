@@ -1,61 +1,90 @@
-# 🚀 Getting started with Strapi
+# SENd Backend (Strapi)
 
-Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
+Strapi backend API for the SENd automatic laundry system.
 
-### `develop`
+## Features
 
-Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
+- **Content Types**: Store, Machine management
+- **MySQL Database**: Configured for production use
+- **API Documentation**: Auto-generated with Swagger
+- **User Authentication**: Built-in user management
+- **File Upload**: Support for image and file uploads
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v18 or later)
+- MySQL database
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Configure environment variables:
+```bash
+cp .env.example .env
+```
+
+4. Update the `.env` file with your database credentials and other settings.
+
+5. Create the database:
+```sql
+CREATE DATABASE send_dbs;
+```
+
+### Development
+
+Start the development server:
+
+```bash
 npm run develop
-# or
-yarn develop
 ```
 
-### `start`
+The admin panel will be available at `http://localhost:1337/admin`
 
-Start your Strapi application with autoReload disabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-start)
+### Production
 
-```
-npm run start
-# or
-yarn start
-```
+Build and start the production server:
 
-### `build`
-
-Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
-
-```
+```bash
 npm run build
-# or
-yarn build
+npm run start
 ```
 
-## ⚙️ Deployment
+## API Documentation
 
-Strapi gives you many possible deployment options for your project including [Strapi Cloud](https://cloud.strapi.io). Browse the [deployment section of the documentation](https://docs.strapi.io/dev-docs/deployment) to find the best solution for your use case.
+Once the server is running, you can access the API documentation at:
+`http://localhost:1337/documentation`
 
-```
-yarn strapi deploy
-```
+## Database Schema
 
-## 📚 Learn more
+### Store (Buder)
+- Store information for automatic laundry shops
+- Location data, contact info, services offered
+- Operating hours and pricing
 
-- [Resource center](https://strapi.io/resource-center) - Strapi resource center.
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-- [Strapi blog](https://strapi.io/blog) - Official Strapi blog containing articles made by the Strapi team and the community.
-- [Changelog](https://strapi.io/changelog) - Find out about the Strapi product updates, new features and general improvements.
+### Machine
+- Washing machine information
+- Status tracking (available, in-use, maintenance)
+- Usage statistics
 
-Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/strapi). Your feedback and contributions are welcome!
+## Environment Variables
 
-## ✨ Community
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `DATABASE_CLIENT` | Database type | mysql |
+| `DATABASE_HOST` | Database host | localhost |
+| `DATABASE_PORT` | Database port | 3306 |
+| `DATABASE_NAME` | Database name | send_dbs |
+| `DATABASE_USERNAME` | Database user | root |
+| `DATABASE_PASSWORD` | Database password | |
 
-- [Discord](https://discord.strapi.io) - Come chat with the Strapi community including the core team.
-- [Forum](https://forum.strapi.io/) - Place to discuss, ask questions and find answers, show your Strapi project and get feedback or just talk with other Community members.
-- [Awesome Strapi](https://github.com/strapi/awesome-strapi) - A curated list of awesome things related to Strapi.
+## License
 
----
-
-<sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>
+Private project for SENd System.
